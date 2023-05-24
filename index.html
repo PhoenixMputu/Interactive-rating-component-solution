@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main id="main">
+    <section id="first">
+      <img src="images/icon-star.svg" alt="icon-star">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="numbers">
+        <div onclick={getAnswer(1)} id="1">1</div>
+        <div onclick={getAnswer(2)} id="2">2</div>
+        <div onclick={getAnswer(3)} id="3">3</div>
+        <div onclick={getAnswer(4)} id="4">4</div>
+        <div onclick={getAnswer(5)} id="5">5</div>
+      </div>
+      <p class="isInvisible" id="error">Please choose a number</p>
+      <button onclick={submit()}>SUBMIT</button>
+    </section>
+
+    <section id="second">
+      <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+      <p class="tag">You selected out 4 of 5</p>
+      <h1>Thank you!</h1>
+      <p class="desciption">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://Victorydeo.wordifysites.com">Victory Deo</a>.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

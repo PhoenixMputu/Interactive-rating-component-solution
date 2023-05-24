@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+main {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+section {
+    position: absolute;
+    background-color: hsl(213, 19%, 18%);
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 400px;
+    box-shadow: 2px 2px 2px hsl(216, 12%, 8%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#first p, #second .desciption {
+    font-size: 15px;
+    max-lines: 3;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.error {
+    color: red !important;
+}
+
+#first img {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 18%);
+    margin-bottom: 1.5rem;
+    box-shadow: 2px 2px 2px 2px hsl(213, 19%, 8%);
+    width: auto;
+    height: auto;
+}
+
+#first h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.numbers div {
+    padding: 10px 15px;
+    border-radius: 100%;
+    color: hsl(216, 12%, 54%);
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 2px 2px 2px 2px hsl(213, 19%, 8%);
+}
+
+.numbers div:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.active {
+    background-color: hsl(217, 12%, 63%) !important;
+    color: hsl(0, 0%, 100%) !important;
+}
+
+.disabled {
+    background-color: hsl(213, 19%, 18%) !;
+}
+
+#first button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 100px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#first button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+#second {
+    display: block;
+    text-align: center;
+}
+
+#second img {
+    margin: 0 auto 1.5rem;
+    width: auto;
+    height: auto;
+    display: block;
+
+}
+
+#second .tag {
+    display: inline-block;
+    padding: 5px 20px !important;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 2px 2px 2px 2px hsl(213, 19%, 8%);
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+#second h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.desciption {
+    margin: 0 !important;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px !important;
+    color: hsl(216, 12%, 54%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.attribution a {
+    color: hsl(25, 97%, 53%);
+    text-decoration: none;
+}
+
+.isInvisible {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 96%;
+    }
+}
